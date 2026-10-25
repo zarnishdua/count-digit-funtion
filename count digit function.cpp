@@ -3,7 +3,10 @@ using namespace std;
 int  count_digit(int a){
     int last_digit;
    int  count=0;
-  while(a>0){
+    if(a==0){
+    return 1;
+    }
+  while(a>0 || a<0){
     last_digit=a%10;
     count++;
     a=a/10;
